@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="login-admin.php" path="\admin">
+    <totals>
+      <lines total="99" comments="0" code="99" executable="58" executed="0" percent="0.00"/>
+      <methods count="0" tested="0" percent="0"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="0" tested="0" percent="0"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php </token>
+      </line>
+      <line no="2">
+        <token name="T_STRING">session_start</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="3">
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$_SESSION</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">"login"</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="4">
+        <token name="T_WHITESPACE">  </token>
+        <token name="T_ECHO">echo</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;script&gt;location="dashboard"&lt;/script&gt;'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="5">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="6">
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_INCLUDE">include</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'../db.php'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="7">
+        <token name="T_CLOSE_TAG">?&gt;</token>
+      </line>
+      <line no="8">
+        <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+      </line>
+      <line no="9">
+        <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+      </line>
+      <line no="10">
+        <token name="T_INLINE_HTML">  &lt;head&gt;</token>
+      </line>
+      <line no="11">
+        <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+      </line>
+      <line no="12">
+        <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+      </line>
+      <line no="13"/>
+      <line no="14"/>
+      <line no="15">
+        <token name="T_INLINE_HTML">    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"&gt;</token>
+      </line>
+      <line no="16">
+        <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" type="text/css" href="css/login.css"&gt;</token>
+      </line>
+      <line no="17"/>
+      <line no="18">
+        <token name="T_INLINE_HTML">    &lt;title&gt;Login Admin&lt;/title&gt;</token>
+      </line>
+      <line no="19">
+        <token name="T_INLINE_HTML">  &lt;/head&gt;</token>
+      </line>
+      <line no="20">
+        <token name="T_INLINE_HTML">  &lt;body style="background-image: url(../asset/gambar/banner.jpg); background-size: cover; background-position: center; background-attachment: fixed;"&gt;</token>
+      </line>
+      <line no="21"/>
+      <line no="22"/>
+      <line no="23"/>
+      <line no="24">
+        <token name="T_INLINE_HTML">&lt;div class="container"&gt;</token>
+      </line>
+      <line no="25">
+        <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+      </line>
+      <line no="26">
+        <token name="T_INLINE_HTML">      &lt;div class="col-sm-9 col-md-7 col-lg-5 mx-auto my-5"&gt;</token>
+      </line>
+      <line no="27">
+        <token name="T_INLINE_HTML">        &lt;div class="card border-0 shadow rounded-3 my-5 p-5"&gt;</token>
+      </line>
+      <line no="28">
+        <token name="T_INLINE_HTML">        	&lt;img src="../asset/gambar/logo.png" class="img-fluid mx-auto" style="width:50px;"&gt;</token>
+      </line>
+      <line no="29">
+        <token name="T_INLINE_HTML">          &lt;div class="card-body"&gt;</token>
+      </line>
+      <line no="30">
+        <token name="T_INLINE_HTML">          	&lt;h3 class="card-title text-center fs-5"&gt;PEMERINTAHAN&lt;br&gt;DESA SUKASENANG&lt;/h3&gt;</token>
+      </line>
+      <line no="31">
+        <token name="T_INLINE_HTML">            &lt;h5 class="card-title text-center mb-3 fw-light fs-5"&gt;Login Admin&lt;/h5&gt;</token>
+      </line>
+      <line no="32">
+        <token name="T_INLINE_HTML">            </token>
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="33"/>
+      <line no="34">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$_POST</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'submit'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="35"/>
+      <line no="36">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_VARIABLE">$username</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$_POST</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'email'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_VARIABLE">$password</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$_POST</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'pass'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="38"/>
+      <line no="39">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">mysqli_query</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$conn</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">"SELECT * FROM tb_admin WHERE username = '"</token>
+        <token name="T_DOT">.</token>
+        <token name="T_VARIABLE">$username</token>
+        <token name="T_DOT">.</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">"' "</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="40"/>
+      <line no="41">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_IF">if</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">mysqli_num_rows</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_GT">&gt;</token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="42"/>
+      <line no="43">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$row</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">mysqli_fetch_assoc</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="44"/>
+      <line no="45">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">password_verify</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$password</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$row</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">                      </token>
+        <token name="T_VARIABLE">$_SESSION</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">"login"</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">                        </token>
+        <token name="T_ECHO">echo</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;script&gt;location="dashboard"&lt;/script&gt;'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_ECHO">echo</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;div class="alert alert-primary alert-dismissible fade show" role="alert"&gt;</token>
+      </line>
+      <line no="50">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                          &lt;strong style="font-style:italic;"&gt;Password Salah!&lt;/strong&gt;</token>
+      </line>
+      <line no="51">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                          &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;</token>
+      </line>
+      <line no="52">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                        &lt;/div&gt;'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="54"/>
+      <line no="55">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_ELSE">else</token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_ECHO">echo</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;div class="alert alert-primary alert-dismissible fade show" role="alert"&gt;</token>
+      </line>
+      <line no="57">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                          &lt;strong style="font-style:italic;"&gt;Username Tidak Ditemukan!&lt;/strong&gt;</token>
+      </line>
+      <line no="58">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                          &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;</token>
+      </line>
+      <line no="59">
+        <token name="T_CONSTANT_ENCAPSED_STRING">                        &lt;/div&gt;'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="61"/>
+      <line no="62">
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="63"/>
+      <line no="64">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_TAG">?&gt;</token>
+      </line>
+      <line no="65">
+        <token name="T_INLINE_HTML">            &lt;form action="" method="POST"&gt;</token>
+      </line>
+      <line no="66">
+        <token name="T_INLINE_HTML">              &lt;div class="form-floating mb-3"&gt;</token>
+      </line>
+      <line no="67">
+        <token name="T_INLINE_HTML">                &lt;input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required="Username Harus Diisi"&gt;</token>
+      </line>
+      <line no="68">
+        <token name="T_INLINE_HTML">                &lt;label for="floatingInput"&gt;Email address&lt;/label&gt;</token>
+      </line>
+      <line no="69">
+        <token name="T_INLINE_HTML">              &lt;/div&gt;</token>
+      </line>
+      <line no="70">
+        <token name="T_INLINE_HTML">              &lt;div class="form-floating mb-3"&gt;</token>
+      </line>
+      <line no="71">
+        <token name="T_INLINE_HTML">                &lt;input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password" required&gt;</token>
+      </line>
+      <line no="72">
+        <token name="T_INLINE_HTML">                &lt;label for="floatingPassword"&gt;Password&lt;/label&gt;</token>
+      </line>
+      <line no="73">
+        <token name="T_INLINE_HTML">              &lt;/div&gt;</token>
+      </line>
+      <line no="74">
+        <token name="T_INLINE_HTML">              &lt;div class="d-grid"&gt;</token>
+      </line>
+      <line no="75">
+        <token name="T_INLINE_HTML">                &lt;button class="btn btn-primary name btn-login text-uppercase fw-bold" name="submit" type="submit"&gt;Sign</token>
+      </line>
+      <line no="76">
+        <token name="T_INLINE_HTML">                  in&lt;/button&gt;</token>
+      </line>
+      <line no="77">
+        <token name="T_INLINE_HTML">              &lt;/div&gt;</token>
+      </line>
+      <line no="78">
+        <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+      </line>
+      <line no="79"/>
+      <line no="80">
+        <token name="T_INLINE_HTML">          &lt;/div&gt;</token>
+      </line>
+      <line no="81">
+        <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+      </line>
+      <line no="82">
+        <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+      </line>
+      <line no="83">
+        <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+      </line>
+      <line no="84">
+        <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+      </line>
+      <line no="85"/>
+      <line no="86"/>
+      <line no="87"/>
+      <line no="88"/>
+      <line no="89"/>
+      <line no="90"/>
+      <line no="91"/>
+      <line no="92"/>
+      <line no="93"/>
+      <line no="94">
+        <token name="T_INLINE_HTML">   </token>
+      </line>
+      <line no="95">
+        <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"&gt;&lt;/script&gt;</token>
+      </line>
+      <line no="96">
+        <token name="T_INLINE_HTML">  &lt;/body&gt;</token>
+      </line>
+      <line no="97">
+        <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+      </line>
+      <line no="98"/>
+      <line no="99"/>
+    </source>
+  </file>
+</phpunit>

@@ -1,0 +1,20 @@
+{
+  "source": {
+    "directories": [
+      "lib",
+      "admin",
+      "isi_halaman",
+      "web"
+    ],
+    "exclude": [
+      "tests",
+      "vendor",
+      "asset"
+    ]
+  },
+  "autoload": {
+    "files": ["vendor/autoload.php"]
+  },
+  "onlyCovered": false,
+  "logVerbosity": "all"
+}

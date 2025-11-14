@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         colors="true"
+         executionOrder="default"
+         resolveDependencies="true">
+
+    <testsuites>
+        <testsuite name="Web Desa Sukasenang Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <source>
+        <include>
+            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/admin</directory>
+            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/isi_halaman</directory>
+            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/web</directory>
+            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main</directory>
+        </include>
+        <exclude>
+            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/vendor</directory>
+            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/asset</directory>
+            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/tests</directory>
+        </exclude>
+    </source>
+</phpunit>
