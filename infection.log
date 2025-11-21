@@ -1,0 +1,66 @@
+Note: Pass `--log-verbosity=all` to log information about killed and errored mutants.
+Note: Pass `--debug` to log test-framework output.
+
+Escaped mutants:
+================
+
+1) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:26    [M] LessThan [ID] 8fea816e61941e5f0b2082784287b0f9
+
+@@ @@
+      */
+     public static function calculatePagination(int $currentPage, int $itemsPerPage): array
+     {
+-        if ($currentPage < 1) {
++        if ($currentPage <= 1) {
+             $currentPage = 1;
+         }
+         $position = ($currentPage - 1) * $itemsPerPage;
+
+
+2) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:88    [M] LessThan [ID] d25ad3045523bfaf5c514bc9b34f349a
+
+@@ @@
+      */
+     public static function buildPaginationUrl(int $pageNumber): string
+     {
+-        if ($pageNumber < 1) {
++        if ($pageNumber <= 1) {
+             $pageNumber = 1;
+         }
+         return '?id=' . $pageNumber;
+
+
+3) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:109    [M] DecrementInteger [ID] 21153862accb3b1b24219844e5f7310c
+
+@@ @@
+      * Truncate text and add ellipsis
+      * Used for article previews
+      */
+-    public static function truncateText(string $text, int $length = 250): string
++    public static function truncateText(string $text, int $length = 249): string
+     {
+         $stripped = strip_tags($text);
+         if (strlen($stripped) > $length) {
+
+
+4) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:112    [M] GreaterThan [ID] af72340dfa7f8a43c2b4127747656fc5
+
+@@ @@
+     public static function truncateText(string $text, int $length = 250): string
+     {
+         $stripped = strip_tags($text);
+-        if (strlen($stripped) > $length) {
++        if (strlen($stripped) >= $length) {
+             return substr($stripped, 0, $length) . '...';
+         }
+         return $stripped;
+
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Not Covered mutants:
+====================

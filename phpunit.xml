@@ -22,7 +22,6 @@
         <exclude>
             <directory>vendor</directory>
             <directory>asset</directory>
-            <directory>tests</directory>
         </exclude>
     </source>
 </phpunit>

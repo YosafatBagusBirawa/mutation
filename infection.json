@@ -1,18 +1,27 @@
-﻿{
-  "source": {
-    "directories": ["lib","admin","isi_halaman","web","."]
-  },
-  "mutate": [
-    "lib/**/*.php",
-    "admin/**/*.php",
-    "isi_halaman/**/*.php",
-    "web/**/*.php",
-    "*.php"
-  ],
-  "phpUnit": {
-    "configDir": "."
-  },
-  "logs": {
-    "text": "infection.log"
-  }
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": [
+            "lib",
+            "admin",
+            "isi_halaman",
+            "."
+        ],
+        "excludes": [
+            "vendor",
+            "tests",
+            "asset"
+        ]
+    },
+    "phpUnit": {
+        "configDir": ".",
+        "customPath": "vendor/bin/phpunit"
+    },
+    "logs": {
+        "text": "infection.log",
+        "summary": "summary.log"
+    },
+    "mutators": {
+        "@default": true
+    }
 }
