@@ -18,6 +18,7 @@
             <directory suffix=".php">admin</directory>
             <directory suffix=".php">isi_halaman</directory>
             <directory suffix=".php">web</directory>
+            <directory suffix=".php">.</directory>
         </include>
         <exclude>
             <directory>vendor</directory>

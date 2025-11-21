@@ -1,12 +1,59 @@
 <?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <build time="Fri Nov 21 6:57:00 UTC 2025" phpunit="12.4.2" coverage="12.4.0">
+  <build time="Fri Nov 21 7:33:26 UTC 2025" phpunit="12.4.2" coverage="12.4.0">
     <runtime name="PHP" version="8.3.23" url="https://www.php.net/"/>
     <driver name="xdebug" version="3.4.7"/>
   </build>
   <project source="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main">
     <tests>
+      <test name="DataPendudukPaginationTest::pagination_default_when_empty" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_default_when_zero" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_page_one" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_page_two" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_page_three" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_page_five_with_custom_limit" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_position_formula" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_high_page_number" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_negative_page_treated_as_empty" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_returns_array_with_required_keys" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_all_values_are_integers" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_links_first_page" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_links_middle_page" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_links_last_page" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_zero_items" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_one_item" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_exact_multiple" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_with_remainder" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_many_items" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::calculate_total_pages_zero_per_page" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_first" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_middle" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_last" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_beyond_total" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_zero" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::is_valid_page_negative" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_pagination_page_one" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_pagination_page_two" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_build_pagination_url_page_one" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_build_pagination_url_page_three" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_is_first_page_true" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_is_first_page_false" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_is_first_page_zero" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_has_next_page_true" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_has_next_page_false_at_last" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_has_next_page_false_beyond_total" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_has_next_page_boundary_conditions" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_workflow_navigate_pages" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_url_generation_sequence" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_total_pages" size="unknown" status="success"/>
+      <test name="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases" size="unknown" status="success"/>
       <test name="HelloTest::it_returns_hi" size="unknown" status="success"/>
+      <test name="IndexTest::index_runs_without_fatal_error" size="unknown" status="success"/>
+      <test name="SanityTest::sanity_check" size="unknown" status="success"/>
       <test name="UtilsTest::generateSlug_converts_spaces_to_dashes" size="unknown" status="success"/>
       <test name="UtilsTest::generateSlug_lowercases_input" size="unknown" status="success"/>
       <test name="UtilsTest::generateSlug_handles_empty_string" size="unknown" status="success"/>
@@ -55,10 +102,10 @@
     </tests>
     <directory name="/">
       <totals>
-        <lines total="14714" comments="44" code="14670" executable="10966" executed="26" percent="0.24"/>
-        <methods count="11" tested="11" percent="100.00"/>
+        <lines total="18311" comments="117" code="18194" executable="12889" executed="462" percent="3.58"/>
+        <methods count="108" tested="108" percent="100.00"/>
         <functions count="1" tested="1" percent="100.00"/>
-        <classes count="1" tested="1" percent="100.00"/>
+        <classes count="6" tested="6" percent="100.00"/>
         <traits count="0" tested="0" percent="0"/>
       </totals>
       <directory name="admin">
@@ -547,6 +594,222 @@
           </totals>
         </file>
       </directory>
+      <directory name="tests">
+        <totals>
+          <lines total="1125" comments="72" code="1053" executable="436" executed="436" percent="100.00"/>
+          <methods count="97" tested="97" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="5" tested="5" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="DataPendudukPaginationTest.php" href="tests/DataPendudukPaginationTest.php.xml">
+          <totals>
+            <lines total="532" comments="57" code="475" executable="176" executed="176" percent="100.00"/>
+            <methods count="49" tested="49" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="HelloTest.php" href="tests/HelloTest.php.xml">
+          <totals>
+            <lines total="16" comments="0" code="16" executable="2" executed="2" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="IndexTest.php" href="tests/IndexTest.php.xml">
+          <totals>
+            <lines total="17" comments="2" code="15" executable="1" executed="1" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="SanityTest.php" href="tests/SanityTest.php.xml">
+          <totals>
+            <lines total="15" comments="0" code="15" executable="1" executed="1" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="UtilsTest.php" href="tests/UtilsTest.php.xml">
+          <totals>
+            <lines total="545" comments="13" code="532" executable="256" executed="256" percent="100.00"/>
+            <methods count="45" tested="45" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="tools">
+        <totals>
+          <lines total="21" comments="1" code="20" executable="15" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="inspect_infection_json.php" href="tools/inspect_infection_json.php.xml">
+          <totals>
+            <lines total="12" comments="1" code="11" executable="9" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="validate_json.php" href="tools/validate_json.php.xml">
+          <totals>
+            <lines total="9" comments="0" code="9" executable="6" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <file name="404.php" href="404.php.xml">
+        <totals>
+          <lines total="76" comments="0" code="76" executable="52" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="berita.php" href="berita.php.xml">
+        <totals>
+          <lines total="165" comments="0" code="165" executable="98" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="data-penduduk.php" href="data-penduduk.php.xml">
+        <totals>
+          <lines total="283" comments="0" code="283" executable="153" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="datadesa.php" href="datadesa.php.xml">
+        <totals>
+          <lines total="158" comments="0" code="158" executable="90" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="db.php" href="db.php.xml">
+        <totals>
+          <lines total="8" comments="0" code="8" executable="5" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="demografis.php" href="demografis.php.xml">
+        <totals>
+          <lines total="131" comments="0" code="131" executable="99" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="gallery.php" href="gallery.php.xml">
+        <totals>
+          <lines total="156" comments="0" code="156" executable="91" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="i.php" href="i.php.xml">
+        <totals>
+          <lines total="242" comments="0" code="242" executable="139" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="index.php" href="index.php.xml">
+        <totals>
+          <lines total="544" comments="0" code="544" executable="352" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="kelembagaan.php" href="kelembagaan.php.xml">
+        <totals>
+          <lines total="155" comments="0" code="155" executable="89" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="perangkat-desa.php" href="perangkat-desa.php.xml">
+        <totals>
+          <lines total="136" comments="0" code="136" executable="75" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="profil.php" href="profil.php.xml">
+        <totals>
+          <lines total="155" comments="0" code="155" executable="89" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="simpan-komentar.php" href="simpan-komentar.php.xml">
+        <totals>
+          <lines total="31" comments="0" code="31" executable="18" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="tampil.php" href="tampil.php.xml">
+        <totals>
+          <lines total="56" comments="0" code="56" executable="33" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="tempat.php" href="tempat.php.xml">
+        <totals>
+          <lines total="155" comments="0" code="155" executable="89" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
     </directory>
   </project>
 </phpunit>

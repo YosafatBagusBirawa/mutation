@@ -30,6 +30,12 @@
         <covered by="UtilsTest::generateSlug_preserves_content"/>
       </line>
       <line nr="26">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -37,10 +43,17 @@
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="27">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
         <covered by="UtilsTest::calculatePagination_negative_page_defaults_to_one"/>
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="30">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -48,6 +61,12 @@
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="33">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -55,6 +74,12 @@
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="34">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -62,6 +87,12 @@
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="35">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -84,34 +115,54 @@
         <covered by="UtilsTest::extractMonth_all_months_are_different"/>
       </line>
       <line nr="71">
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_true"/>
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_false"/>
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_zero"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
         <covered by="UtilsTest::isFirstPage_true_for_page_one"/>
         <covered by="UtilsTest::isFirstPage_true_for_zero"/>
         <covered by="UtilsTest::isFirstPage_false_for_page_two"/>
         <covered by="UtilsTest::isFirstPage_boundary_conditions"/>
       </line>
       <line nr="79">
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_true"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_false_at_last"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_false_beyond_total"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_boundary_conditions"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
         <covered by="UtilsTest::hasNextPage_true_when_current_less_than_total"/>
         <covered by="UtilsTest::hasNextPage_false_when_on_last_page"/>
         <covered by="UtilsTest::hasNextPage_false_when_current_exceeds_total"/>
         <covered by="UtilsTest::hasNextPage_boundary_testing"/>
       </line>
       <line nr="88">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_three"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::pagination_url_generation_sequence"/>
         <covered by="UtilsTest::buildPaginationUrl_with_valid_page"/>
         <covered by="UtilsTest::buildPaginationUrl_with_negative_page_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_with_zero_page_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_format_consistency"/>
       </line>
       <line nr="89">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_with_negative_page_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_with_zero_page_defaults_to_one"/>
       </line>
       <line nr="91">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_three"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::pagination_url_generation_sequence"/>
         <covered by="UtilsTest::buildPaginationUrl_with_valid_page"/>
         <covered by="UtilsTest::buildPaginationUrl_with_negative_page_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_with_zero_page_defaults_to_one"/>
         <covered by="UtilsTest::buildPaginationUrl_format_consistency"/>
       </line>
       <line nr="99">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
         <covered by="UtilsTest::calculateTotalPages_single_page"/>
         <covered by="UtilsTest::calculateTotalPages_multiple_pages"/>
         <covered by="UtilsTest::calculateTotalPages_exact_division"/>
@@ -123,6 +174,8 @@
         <covered by="UtilsTest::calculateTotalPages_invalid_items_per_page"/>
       </line>
       <line nr="102">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
         <covered by="UtilsTest::calculateTotalPages_single_page"/>
         <covered by="UtilsTest::calculateTotalPages_multiple_pages"/>
         <covered by="UtilsTest::calculateTotalPages_exact_division"/>
@@ -159,6 +212,12 @@
         <covered by="UtilsTest::getCommentCountLabel_type_conversion"/>
       </line>
       <line nr="32">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
@@ -166,6 +225,12 @@
         <covered by="UtilsTest::calculatePagination_zero_page_defaults_to_one"/>
       </line>
       <line nr="36">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
         <covered by="UtilsTest::calculatePagination_first_page"/>
         <covered by="UtilsTest::calculatePagination_third_page"/>
         <covered by="UtilsTest::calculatePagination_position_calculation"/>
