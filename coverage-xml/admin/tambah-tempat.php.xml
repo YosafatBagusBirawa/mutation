@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="tambah-tempat.php" path="\admin">
+  <file name="tambah-tempat.php" path="admin">
     <totals>
       <lines total="381" comments="0" code="381" executable="303" executed="0" percent="0.00"/>
       <methods count="0" tested="0" percent="0"/>
@@ -1389,3 +1389,4 @@
     </source>
   </file>
 </phpunit>
+

@@ -1,20 +1,18 @@
-{
+﻿{
   "source": {
-    "directories": [
-      "lib",
-      "admin",
-      "isi_halaman",
-      "web"
-    ],
-    "exclude": [
-      "tests",
-      "vendor",
-      "asset"
-    ]
+    "directories": ["lib","admin","isi_halaman","web","."]
   },
-  "autoload": {
-    "files": ["vendor/autoload.php"]
+  "mutate": [
+    "lib/**/*.php",
+    "admin/**/*.php",
+    "isi_halaman/**/*.php",
+    "web/**/*.php",
+    "*.php"
+  ],
+  "phpUnit": {
+    "configDir": "."
   },
-  "onlyCovered": false,
-  "logVerbosity": "all"
+  "logs": {
+    "text": "infection.log"
+  }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\phpunit.xml" tests="48" assertions="186" errors="0" failures="0" skipped="0" time="0.481930">
+    <testsuite name="Web Desa Sukasenang Test Suite" tests="48" assertions="186" errors="0" failures="0" skipped="0" time="0.481930">
+      <testsuite name="HelloTest" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\HelloTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.066258">
+        <testcase name="it_returns_hi" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\HelloTest.php" line="10" class="HelloTest" classname="HelloTest" assertions="1" time="0.066258"/>
+      </testsuite>
+      <testsuite name="IndexTest" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\IndexTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.007343">
+        <testcase name="index_runs_without_fatal_error" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\IndexTest.php" line="10" class="IndexTest" classname="IndexTest" assertions="1" time="0.007343"/>
+      </testsuite>
+      <testsuite name="SanityTest" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\SanityTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.005316">
+        <testcase name="sanity_check" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\SanityTest.php" line="10" class="SanityTest" classname="SanityTest" assertions="1" time="0.005316"/>
+      </testsuite>
+      <testsuite name="UtilsTest" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" tests="45" assertions="183" errors="0" failures="0" skipped="0" time="0.403013">
+        <testcase name="generateSlug_converts_spaces_to_dashes" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="10" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.012016"/>
+        <testcase name="generateSlug_lowercases_input" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="22" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.011298"/>
+        <testcase name="generateSlug_handles_empty_string" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="34" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.005998"/>
+        <testcase name="generateSlug_preserves_content" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="45" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.010462"/>
+        <testcase name="calculatePagination_first_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="57" class="UtilsTest" classname="UtilsTest" assertions="6" time="0.012557"/>
+        <testcase name="calculatePagination_third_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="71" class="UtilsTest" classname="UtilsTest" assertions="5" time="0.007356"/>
+        <testcase name="calculatePagination_position_calculation" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="84" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.010881"/>
+        <testcase name="calculatePagination_negative_page_defaults_to_one" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="100" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.009383"/>
+        <testcase name="calculatePagination_zero_page_defaults_to_one" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="111" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.007353"/>
+        <testcase name="formatDisplayDate_formats_correctly" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="123" class="UtilsTest" classname="UtilsTest" assertions="5" time="0.012338"/>
+        <testcase name="formatDisplayDate_with_various_formats" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="136" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.006094"/>
+        <testcase name="formatDisplayDate_day_month_order" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="148" class="UtilsTest" classname="UtilsTest" assertions="2" time="0.009999"/>
+        <testcase name="extractDay_returns_day_number" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="159" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.005626"/>
+        <testcase name="extractDay_with_single_digit" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="171" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.010650"/>
+        <testcase name="extractDay_consistency" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="183" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.005986"/>
+        <testcase name="extractMonth_returns_month_name" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="195" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.007733"/>
+        <testcase name="extractMonth_january" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="207" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.009271"/>
+        <testcase name="extractMonth_all_months_are_different" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="219" class="UtilsTest" classname="UtilsTest" assertions="25" time="0.010434"/>
+        <testcase name="isFirstPage_true_for_page_one" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="236" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.011465"/>
+        <testcase name="isFirstPage_true_for_zero" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="247" class="UtilsTest" classname="UtilsTest" assertions="2" time="0.008924"/>
+        <testcase name="isFirstPage_false_for_page_two" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="257" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.008303"/>
+        <testcase name="isFirstPage_boundary_conditions" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="268" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.012246"/>
+        <testcase name="hasNextPage_true_when_current_less_than_total" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="279" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.006373"/>
+        <testcase name="hasNextPage_false_when_on_last_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="290" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.008432"/>
+        <testcase name="hasNextPage_false_when_current_exceeds_total" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="301" class="UtilsTest" classname="UtilsTest" assertions="2" time="0.008939"/>
+        <testcase name="hasNextPage_boundary_testing" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="311" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.008721"/>
+        <testcase name="buildPaginationUrl_with_valid_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="322" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.011091"/>
+        <testcase name="buildPaginationUrl_with_negative_page_defaults_to_one" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="334" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.005880"/>
+        <testcase name="buildPaginationUrl_with_zero_page_defaults_to_one" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="345" class="UtilsTest" classname="UtilsTest" assertions="2" time="0.010838"/>
+        <testcase name="buildPaginationUrl_format_consistency" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="355" class="UtilsTest" classname="UtilsTest" assertions="6" time="0.006107"/>
+        <testcase name="calculateTotalPages_single_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="372" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.008640"/>
+        <testcase name="calculateTotalPages_multiple_pages" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="383" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.010444"/>
+        <testcase name="calculateTotalPages_exact_division" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="394" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.006794"/>
+        <testcase name="calculateTotalPages_zero_items" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="405" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.011133"/>
+        <testcase name="calculateTotalPages_invalid_items_per_page" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="415" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.010689"/>
+        <testcase name="calculateTotalPages_rounding_up" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="426" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.006074"/>
+        <testcase name="truncateText_within_limit" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="438" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.010726"/>
+        <testcase name="truncateText_exceeds_limit" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="451" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.005698"/>
+        <testcase name="truncateText_strips_html_tags" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="463" class="UtilsTest" classname="UtilsTest" assertions="5" time="0.010613"/>
+        <testcase name="truncateText_default_length" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="477" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.008192"/>
+        <testcase name="truncateText_preserves_content" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="489" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.007104"/>
+        <testcase name="getCommentCountLabel_returns_string" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="501" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.009436"/>
+        <testcase name="getCommentCountLabel_with_zero" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="512" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.009129"/>
+        <testcase name="getCommentCountLabel_with_large_number" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="523" class="UtilsTest" classname="UtilsTest" assertions="3" time="0.009857"/>
+        <testcase name="getCommentCountLabel_type_conversion" file="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\tests\UtilsTest.php" line="534" class="UtilsTest" classname="UtilsTest" assertions="4" time="0.005729"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

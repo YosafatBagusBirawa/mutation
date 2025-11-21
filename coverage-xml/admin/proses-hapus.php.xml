@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="proses-hapus.php" path="\admin">
+  <file name="proses-hapus.php" path="admin">
     <totals>
       <lines total="109" comments="0" code="109" executable="68" executed="0" percent="0.00"/>
       <methods count="0" tested="0" percent="0"/>
@@ -1105,3 +1105,4 @@
     </source>
   </file>
 </phpunit>
+

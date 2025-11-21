@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="edit-komentar.php" path="\admin\edit">
+  <file name="edit-komentar.php" path="admin/edit">
     <totals>
       <lines total="355" comments="0" code="355" executable="258" executed="0" percent="0.00"/>
       <methods count="0" tested="0" percent="0"/>
@@ -1149,3 +1149,4 @@
     </source>
   </file>
 </phpunit>
+

@@ -14,15 +14,15 @@
 
     <source>
         <include>
-            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/admin</directory>
-            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/isi_halaman</directory>
-            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/web</directory>
-            <directory suffix=".php">D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main</directory>
+            <directory suffix=".php">lib</directory>
+            <directory suffix=".php">admin</directory>
+            <directory suffix=".php">isi_halaman</directory>
+            <directory suffix=".php">web</directory>
         </include>
         <exclude>
-            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/vendor</directory>
-            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/asset</directory>
-            <directory>D:/yosa/app/web-desa-sukasenang-main/web-desa-sukasenang-main/tests</directory>
+            <directory>vendor</directory>
+            <directory>asset</directory>
+            <directory>tests</directory>
         </exclude>
     </source>
 </phpunit>

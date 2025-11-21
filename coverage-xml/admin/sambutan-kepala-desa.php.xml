@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="sambutan-kepala-desa.php" path="\admin">
+  <file name="sambutan-kepala-desa.php" path="admin">
     <totals>
       <lines total="385" comments="0" code="385" executable="278" executed="0" percent="0.00"/>
       <methods count="0" tested="0" percent="0"/>
@@ -1450,3 +1450,4 @@
     </source>
   </file>
 </phpunit>
+

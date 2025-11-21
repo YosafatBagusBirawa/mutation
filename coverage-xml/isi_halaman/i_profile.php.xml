@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
-  <file name="i_profile.php" path="\isi_halaman">
+  <file name="i_profile.php" path="isi_halaman">
     <totals>
       <lines total="93" comments="0" code="93" executable="51" executed="0" percent="0.00"/>
       <methods count="0" tested="0" percent="0"/>
@@ -502,3 +502,4 @@
     </source>
   </file>
 </phpunit>
+

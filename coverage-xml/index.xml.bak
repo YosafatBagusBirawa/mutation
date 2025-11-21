@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Fri Nov 21 5:34:02 UTC 2025" phpunit="12.4.2" coverage="12.4.0">
+    <runtime name="PHP" version="8.3.23" url="https://www.php.net/"/>
+    <driver name="xdebug" version="3.4.7"/>
+  </build>
+  <project source="D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main">
+    <tests>
+      <test name="HelloTest::it_returns_hi" size="unknown" status="success"/>
+      <test name="UtilsTest::generateSlug_converts_spaces_to_dashes" size="unknown" status="success"/>
+      <test name="UtilsTest::generateSlug_lowercases_input" size="unknown" status="success"/>
+      <test name="UtilsTest::generateSlug_handles_empty_string" size="unknown" status="success"/>
+      <test name="UtilsTest::generateSlug_preserves_content" size="unknown" status="success"/>
+      <test name="UtilsTest::calculatePagination_first_page" size="unknown" status="success"/>
+      <test name="UtilsTest::calculatePagination_third_page" size="unknown" status="success"/>
+      <test name="UtilsTest::calculatePagination_position_calculation" size="unknown" status="success"/>
+      <test name="UtilsTest::calculatePagination_negative_page_defaults_to_one" size="unknown" status="success"/>
+      <test name="UtilsTest::calculatePagination_zero_page_defaults_to_one" size="unknown" status="success"/>
+      <test name="UtilsTest::formatDisplayDate_formats_correctly" size="unknown" status="success"/>
+      <test name="UtilsTest::formatDisplayDate_with_various_formats" size="unknown" status="success"/>
+      <test name="UtilsTest::formatDisplayDate_day_month_order" size="unknown" status="success"/>
+      <test name="UtilsTest::extractDay_returns_day_number" size="unknown" status="success"/>
+      <test name="UtilsTest::extractDay_with_single_digit" size="unknown" status="success"/>
+      <test name="UtilsTest::extractDay_consistency" size="unknown" status="success"/>
+      <test name="UtilsTest::extractMonth_returns_month_name" size="unknown" status="success"/>
+      <test name="UtilsTest::extractMonth_january" size="unknown" status="success"/>
+      <test name="UtilsTest::extractMonth_all_months_are_different" size="unknown" status="success"/>
+      <test name="UtilsTest::isFirstPage_true_for_page_one" size="unknown" status="success"/>
+      <test name="UtilsTest::isFirstPage_true_for_zero" size="unknown" status="success"/>
+      <test name="UtilsTest::isFirstPage_false_for_page_two" size="unknown" status="success"/>
+      <test name="UtilsTest::isFirstPage_boundary_conditions" size="unknown" status="success"/>
+      <test name="UtilsTest::hasNextPage_true_when_current_less_than_total" size="unknown" status="success"/>
+      <test name="UtilsTest::hasNextPage_false_when_on_last_page" size="unknown" status="success"/>
+      <test name="UtilsTest::hasNextPage_false_when_current_exceeds_total" size="unknown" status="success"/>
+      <test name="UtilsTest::hasNextPage_boundary_testing" size="unknown" status="success"/>
+      <test name="UtilsTest::buildPaginationUrl_with_valid_page" size="unknown" status="success"/>
+      <test name="UtilsTest::buildPaginationUrl_with_negative_page_defaults_to_one" size="unknown" status="success"/>
+      <test name="UtilsTest::buildPaginationUrl_with_zero_page_defaults_to_one" size="unknown" status="success"/>
+      <test name="UtilsTest::buildPaginationUrl_format_consistency" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_single_page" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_multiple_pages" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_exact_division" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_zero_items" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_invalid_items_per_page" size="unknown" status="success"/>
+      <test name="UtilsTest::calculateTotalPages_rounding_up" size="unknown" status="success"/>
+      <test name="UtilsTest::truncateText_within_limit" size="unknown" status="success"/>
+      <test name="UtilsTest::truncateText_exceeds_limit" size="unknown" status="success"/>
+      <test name="UtilsTest::truncateText_strips_html_tags" size="unknown" status="success"/>
+      <test name="UtilsTest::truncateText_default_length" size="unknown" status="success"/>
+      <test name="UtilsTest::truncateText_preserves_content" size="unknown" status="success"/>
+      <test name="UtilsTest::getCommentCountLabel_returns_string" size="unknown" status="success"/>
+      <test name="UtilsTest::getCommentCountLabel_with_zero" size="unknown" status="success"/>
+      <test name="UtilsTest::getCommentCountLabel_with_large_number" size="unknown" status="success"/>
+      <test name="UtilsTest::getCommentCountLabel_type_conversion" size="unknown" status="success"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="14714" comments="44" code="14670" executable="10966" executed="26" percent="0.24"/>
+        <methods count="11" tested="11" percent="100.00"/>
+        <functions count="1" tested="1" percent="100.00"/>
+        <classes count="1" tested="1" percent="100.00"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <directory name="admin">
+        <totals>
+          <lines total="13841" comments="0" code="13841" executable="10615" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <directory name="edit">
+          <totals>
+            <lines total="3904" comments="0" code="3904" executable="2900" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="balas-komen.php" href="admin/edit/balas-komen.php.xml">
+            <totals>
+              <lines total="351" comments="0" code="351" executable="267" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-agama.php" href="admin/edit/edit-agama.php.xml">
+            <totals>
+              <lines total="313" comments="0" code="313" executable="244" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-datadesa.php" href="admin/edit/edit-datadesa.php.xml">
+            <totals>
+              <lines total="382" comments="0" code="382" executable="278" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-gambar.php" href="admin/edit/edit-gambar.php.xml">
+            <totals>
+              <lines total="381" comments="0" code="381" executable="278" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-jeniskelamin.php" href="admin/edit/edit-jeniskelamin.php.xml">
+            <totals>
+              <lines total="314" comments="0" code="314" executable="244" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-kelembagaan.php" href="admin/edit/edit-kelembagaan.php.xml">
+            <totals>
+              <lines total="391" comments="0" code="391" executable="285" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-komentar.php" href="admin/edit/edit-komentar.php.xml">
+            <totals>
+              <lines total="355" comments="0" code="355" executable="258" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-pekerjaan.php" href="admin/edit/edit-pekerjaan.php.xml">
+            <totals>
+              <lines total="313" comments="0" code="313" executable="243" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-pengumuman.php" href="admin/edit/edit-pengumuman.php.xml">
+            <totals>
+              <lines total="352" comments="0" code="352" executable="253" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-perangkat.php" href="admin/edit/edit-perangkat.php.xml">
+            <totals>
+              <lines total="376" comments="0" code="376" executable="275" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="edit-sosmed.php" href="admin/edit/edit-sosmed.php.xml">
+            <totals>
+              <lines total="376" comments="0" code="376" executable="275" executed="0" percent="0.00"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <file name="dashboard.php" href="admin/dashboard.php.xml">
+          <totals>
+            <lines total="376" comments="0" code="376" executable="236" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-agama.php" href="admin/data-agama.php.xml">
+          <totals>
+            <lines total="313" comments="0" code="313" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-artikel.php" href="admin/data-artikel.php.xml">
+          <totals>
+            <lines total="321" comments="0" code="321" executable="258" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-desa.php" href="admin/data-desa.php.xml">
+          <totals>
+            <lines total="316" comments="0" code="316" executable="251" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-gambar.php" href="admin/data-gambar.php.xml">
+          <totals>
+            <lines total="309" comments="0" code="309" executable="242" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-halaman.php" href="admin/data-halaman.php.xml">
+          <totals>
+            <lines total="317" comments="0" code="317" executable="251" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-jeniskelamin.php" href="admin/data-jeniskelamin.php.xml">
+          <totals>
+            <lines total="309" comments="0" code="309" executable="247" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-kelembagaan.php" href="admin/data-kelembagaan.php.xml">
+          <totals>
+            <lines total="317" comments="0" code="317" executable="251" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-komentar.php" href="admin/data-komentar.php.xml">
+          <totals>
+            <lines total="322" comments="0" code="322" executable="257" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-pekerjaan.php" href="admin/data-pekerjaan.php.xml">
+          <totals>
+            <lines total="309" comments="0" code="309" executable="247" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-pengumuman.php" href="admin/data-pengumuman.php.xml">
+          <totals>
+            <lines total="320" comments="0" code="320" executable="255" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-perangkat-desa.php" href="admin/data-perangkat-desa.php.xml">
+          <totals>
+            <lines total="321" comments="0" code="321" executable="253" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="data-sosmed.php" href="admin/data-sosmed.php.xml">
+          <totals>
+            <lines total="312" comments="0" code="312" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="login-admin.php" href="admin/login-admin.php.xml">
+          <totals>
+            <lines total="99" comments="0" code="99" executable="58" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="logout.php" href="admin/logout.php.xml">
+          <totals>
+            <lines total="5" comments="0" code="5" executable="3" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="proses-hapus.php" href="admin/proses-hapus.php.xml">
+          <totals>
+            <lines total="109" comments="0" code="109" executable="68" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="sambutan-kepala-desa.php" href="admin/sambutan-kepala-desa.php.xml">
+          <totals>
+            <lines total="385" comments="0" code="385" executable="278" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="setting-desa.php" href="admin/setting-desa.php.xml">
+          <totals>
+            <lines total="433" comments="0" code="433" executable="302" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-agama.php" href="admin/tambah-agama.php.xml">
+          <totals>
+            <lines total="311" comments="0" code="311" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-artikel.php" href="admin/tambah-artikel.php.xml">
+          <totals>
+            <lines total="348" comments="0" code="348" executable="274" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-data-desa.php" href="admin/tambah-data-desa.php.xml">
+          <totals>
+            <lines total="347" comments="0" code="347" executable="274" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-foto.php" href="admin/tambah-foto.php.xml">
+          <totals>
+            <lines total="345" comments="0" code="345" executable="274" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-halaman.php" href="admin/tambah-halaman.php.xml">
+          <totals>
+            <lines total="346" comments="0" code="346" executable="274" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-jeniskelamin.php" href="admin/tambah-jeniskelamin.php.xml">
+          <totals>
+            <lines total="310" comments="0" code="310" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-kelembagaan.php" href="admin/tambah-kelembagaan.php.xml">
+          <totals>
+            <lines total="346" comments="0" code="346" executable="274" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-pekerjaan.php" href="admin/tambah-pekerjaan.php.xml">
+          <totals>
+            <lines total="310" comments="0" code="310" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-pengumuman.php" href="admin/tambah-pengumuman.php.xml">
+          <totals>
+            <lines total="348" comments="0" code="348" executable="282" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-perangkat.php" href="admin/tambah-perangkat.php.xml">
+          <totals>
+            <lines total="339" comments="0" code="339" executable="268" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-sosmed.php" href="admin/tambah-sosmed.php.xml">
+          <totals>
+            <lines total="341" comments="0" code="341" executable="268" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tambah-tempat.php" href="admin/tambah-tempat.php.xml">
+          <totals>
+            <lines total="381" comments="0" code="381" executable="303" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="tempat.php" href="admin/tempat.php.xml">
+          <totals>
+            <lines total="306" comments="0" code="306" executable="249" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="ubahpw.php" href="admin/ubahpw.php.xml">
+          <totals>
+            <lines total="366" comments="0" code="366" executable="273" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="isi_halaman">
+        <totals>
+          <lines total="739" comments="0" code="739" executable="325" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="artikel.php" href="isi_halaman/artikel.php.xml">
+          <totals>
+            <lines total="246" comments="0" code="246" executable="85" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="i_data-desa.php" href="isi_halaman/i_data-desa.php.xml">
+          <totals>
+            <lines total="95" comments="0" code="95" executable="50" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="i_kelembagaan.php" href="isi_halaman/i_kelembagaan.php.xml">
+          <totals>
+            <lines total="95" comments="0" code="95" executable="50" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="i_profile.php" href="isi_halaman/i_profile.php.xml">
+          <totals>
+            <lines total="93" comments="0" code="93" executable="51" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="i_tempat.php" href="isi_halaman/i_tempat.php.xml">
+          <totals>
+            <lines total="210" comments="0" code="210" executable="89" executed="0" percent="0.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="lib">
+        <totals>
+          <lines total="134" comments="44" code="90" executable="26" executed="26" percent="100.00"/>
+          <methods count="11" tested="11" percent="100.00"/>
+          <functions count="1" tested="1" percent="100.00"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="Utils.php" href="lib/Utils.php.xml">
+          <totals>
+            <lines total="126" comments="44" code="82" executable="25" executed="25" percent="100.00"/>
+            <methods count="11" tested="11" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="hello.php" href="lib/hello.php.xml">
+          <totals>
+            <lines total="8" comments="0" code="8" executable="1" executed="1" percent="100.00"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="1" tested="1" percent="100.00"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+    </directory>
+  </project>
+</phpunit>
