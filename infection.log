@@ -4,56 +4,110 @@ Note: Pass `--debug` to log test-framework output.
 Escaped mutants:
 ================
 
-1) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:26    [M] LessThan [ID] 8fea816e61941e5f0b2082784287b0f9
+1) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:6    [M] DecrementInteger [ID] c25dfad8ecd1fa9c18776ce3c33ba5fe
 
 @@ @@
-      */
-     public static function calculatePagination(int $currentPage, int $itemsPerPage): array
+ declare (strict_types=1);
+ class Utils
+ {
+-    public static function calculatePagination(int $currentPage, int $itemsPerPage = 8): array
++    public static function calculatePagination(int $currentPage, int $itemsPerPage = 7): array
      {
--        if ($currentPage < 1) {
-+        if ($currentPage <= 1) {
-             $currentPage = 1;
+         if ($itemsPerPage <= 0) {
+             $itemsPerPage = 8;
+
+
+2) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:6    [M] IncrementInteger [ID] aabc1e8dd5365f3737d6d722e2e7dcaf
+
+@@ @@
+ declare (strict_types=1);
+ class Utils
+ {
+-    public static function calculatePagination(int $currentPage, int $itemsPerPage = 8): array
++    public static function calculatePagination(int $currentPage, int $itemsPerPage = 9): array
+     {
+         if ($itemsPerPage <= 0) {
+             $itemsPerPage = 8;
+
+
+3) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:8    [M] LessThanOrEqualTo [ID] a6c330df1b8c9ed80b58efe79c5acc04
+
+@@ @@
+ {
+     public static function calculatePagination(int $currentPage, int $itemsPerPage = 8): array
+     {
+-        if ($itemsPerPage <= 0) {
++        if ($itemsPerPage < 0) {
+             $itemsPerPage = 8;
          }
-         $position = ($currentPage - 1) * $itemsPerPage;
+         if ($currentPage <= 0) {
 
 
-2) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:88    [M] LessThan [ID] d25ad3045523bfaf5c514bc9b34f349a
+4) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:45    [M] DecrementInteger [ID] 25e3ebc31a50b5cc9fd8ed0994aa5223
 
 @@ @@
-      */
-     public static function buildPaginationUrl(int $pageNumber): string
      {
--        if ($pageNumber < 1) {
-+        if ($pageNumber <= 1) {
-             $pageNumber = 1;
+         return $page < $totalPages;
+     }
+-    public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 8): int
++    public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 7): int
+     {
+         if ($totalItems === 0) {
+             return 0;
+
+
+5) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:45    [M] IncrementInteger [ID] ecc1db623884f17a67b65a94536b01bb
+
+@@ @@
+     {
+         return $page < $totalPages;
+     }
+-    public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 8): int
++    public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 9): int
+     {
+         if ($totalItems === 0) {
+             return 0;
+
+
+6) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:47    [M] DecrementInteger [ID] 2451e589966cab9bcbfdbb2b73211087
+
+@@ @@
+     }
+     public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 8): int
+     {
+-        if ($totalItems === 0) {
++        if ($totalItems === -1) {
+             return 0;
          }
-         return '?id=' . $pageNumber;
+         if ($itemsPerPage === 0) {
 
 
-3) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:109    [M] DecrementInteger [ID] 21153862accb3b1b24219844e5f7310c
-
-@@ @@
-      * Truncate text and add ellipsis
-      * Used for article previews
-      */
--    public static function truncateText(string $text, int $length = 250): string
-+    public static function truncateText(string $text, int $length = 249): string
-     {
-         $stripped = strip_tags($text);
-         if (strlen($stripped) > $length) {
-
-
-4) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:112    [M] GreaterThan [ID] af72340dfa7f8a43c2b4127747656fc5
+7) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:48    [M] ReturnRemoval [ID] e1a2773c8d6c63d3ed18178251fe0e0c
 
 @@ @@
-     public static function truncateText(string $text, int $length = 250): string
+     public static function calculateTotalPages(int $totalItems, int $itemsPerPage = 8): int
      {
-         $stripped = strip_tags($text);
--        if (strlen($stripped) > $length) {
-+        if (strlen($stripped) >= $length) {
-             return substr($stripped, 0, $length) . '...';
+         if ($totalItems === 0) {
+-            return 0;
++            
          }
-         return $stripped;
+         if ($itemsPerPage === 0) {
+             return 1;
+
+
+8) D:\yosa\app\web-desa-sukasenang-main\web-desa-sukasenang-main\lib\Utils.php:51    [M] DecrementInteger [ID] 1fe7b8e4cc5d61a32bdaaf081db9e2e3
+
+@@ @@
+         if ($totalItems === 0) {
+             return 0;
+         }
+-        if ($itemsPerPage === 0) {
++        if ($itemsPerPage === -1) {
+             return 1;
+         }
+         return (int) ceil($totalItems / $itemsPerPage);
+     }
+ }
 
 
 Timed Out mutants:

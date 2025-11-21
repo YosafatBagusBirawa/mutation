@@ -1,6 +1,5 @@
 <?php 
 include'db.php';
-require_once __DIR__ . '/lib/Utils.php';
 ?>
 
 

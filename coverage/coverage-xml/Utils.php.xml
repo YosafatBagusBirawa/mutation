@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="Utils.php" path="\">
+    <totals>
+      <lines total="58" comments="0" code="58" executable="21" executed="19" percent="90.48"/>
+      <methods count="5" tested="3" percent="60.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Utils" start="4" executable="21" executed="19" crap="10.09">
+      <namespace name=""/>
+      <method name="calculatePagination" signature="calculatePagination(int $currentPage, int $itemsPerPage): array" start="6" end="25" crap="3.01" executable="11" executed="10" coverage="90.909090909091"/>
+      <method name="buildPaginationUrl" signature="buildPaginationUrl(int $page): string" start="27" end="33" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="isFirstPage" signature="isFirstPage(int $page): bool" start="35" end="38" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="hasNextPage" signature="hasNextPage(int $page, int $totalPages): bool" start="40" end="43" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="calculateTotalPages" signature="calculateTotalPages(int $totalItems, int $itemsPerPage): int" start="45" end="56" crap="3.07" executable="5" executed="4" coverage="80"/>
+    </class>
+    <coverage>
+      <line nr="8">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="12">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="13">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+      </line>
+      <line nr="15">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="18">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="21">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="22">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="23">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="29">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_three"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::pagination_url_generation_sequence"/>
+      </line>
+      <line nr="30">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
+      </line>
+      <line nr="32">
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_page_three"/>
+        <covered by="DataPendudukPaginationTest::utils_build_pagination_url_zero_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::pagination_url_generation_sequence"/>
+      </line>
+      <line nr="37">
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_true"/>
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_false"/>
+        <covered by="DataPendudukPaginationTest::utils_is_first_page_zero"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+      </line>
+      <line nr="42">
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_true"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_false_at_last"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_false_beyond_total"/>
+        <covered by="DataPendudukPaginationTest::utils_has_next_page_boundary_conditions"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+      </line>
+      <line nr="47">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
+      </line>
+      <line nr="48">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
+      </line>
+      <line nr="51">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
+      </line>
+      <line nr="55">
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_total_pages_edge_cases"/>
+      </line>
+      <line nr="20">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+      <line nr="24">
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_page_two"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_negative_defaults_to_one"/>
+        <covered by="DataPendudukPaginationTest::utils_calculate_pagination_various_items_per_page"/>
+        <covered by="DataPendudukPaginationTest::pagination_workflow_navigate_pages"/>
+        <covered by="DataPendudukPaginationTest::pagination_position_calculation_matches_database_limit"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="3"/>
+      <line no="4">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Utils</token>
+      </line>
+      <line no="5">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="6">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">calculatePagination</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$currentPage</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">8</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="7">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="8">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_SMALLER_OR_EQUAL">&lt;=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="9">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">8</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="11"/>
+      <line no="12">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$currentPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_SMALLER_OR_EQUAL">&lt;=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="13">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="14">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="15">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$currentPage</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="16">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="17"/>
+      <line no="18">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$position</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_MINUS">-</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_MULT">*</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="19"/>
+      <line no="20">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="21">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'page'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'position'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$position</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="23">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'itemsPerPage'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+      </line>
+      <line no="24">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="26"/>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">buildPaginationUrl</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="28">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_SMALLER_OR_EQUAL">&lt;=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="31">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="32">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'?id='</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">isFirstPage</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_SMALLER_OR_EQUAL">&lt;=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="38">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="39"/>
+      <line no="40">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">hasNextPage</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$totalPages</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$page</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LT">&lt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$totalPages</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="44"/>
+      <line no="45">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STATIC">static</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">calculateTotalPages</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$totalItems</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">8</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$totalItems</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="50"/>
+      <line no="51">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="54"/>
+      <line no="55">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_INT_CAST">(int)</token>
+        <token name="T_STRING">ceil</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$totalItems</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DIV">/</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$itemsPerPage</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="57">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="58"/>
+    </source>
+  </file>
+</phpunit>
